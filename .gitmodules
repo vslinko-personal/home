@@ -1,0 +1,54 @@
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/autoload"]
+	path = .vim/autoload
+	url = https://gist.github.com/9771127.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule ".vim/bundle/jellybeans.vim"]
+	path = .vim/bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule ".vim/bundle/matchit.zip"]
+	path = .vim/bundle/matchit.zip
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-abolish"]
+	path = .vim/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule ".vim/bundle/vim-autocomplpop"]
+	path = .vim/bundle/vim-autocomplpop
+	url = https://github.com/clones/vim-autocomplpop.git
+[submodule ".vim/bundle/vim-coffee-script"]
+	path = .vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-jade"]
+	path = .vim/bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule ".vim/bundle/vim-l9"]
+	path = .vim/bundle/vim-l9
+	url = https://github.com/clones/vim-l9.git
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".vim/bundle/vim-pastie"]
+	path = .vim/bundle/vim-pastie
+	url = https://github.com/tpope/vim-pastie.git
+[submodule ".vim/bundle/vim-sensible"]
+	path = .vim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule ".vim/bundle/vim-stylus"]
+	path = .vim/bundle/vim-stylus
+	url = https://github.com/wavded/vim-stylus.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
