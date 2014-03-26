@@ -1,0 +1,6 @@
+'packages': [
+  'Zen'
+  'color-picker'
+  'command-logger'
+  'sort-lines'
+]
