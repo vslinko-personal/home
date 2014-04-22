@@ -1,7 +1,7 @@
 ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="essembeh"
 if [[ "$OSTYPE" != "darwin"* ]]; then DISABLE_AUTO_UPDATE="true"; fi
-plugins=(atom brew coffee composer gem git npm sudo symfony2 vagrant)
+plugins=(atom brew coffee composer gem git knife npm sudo symfony2 vagrant)
 
 source "$ZSH/oh-my-zsh.sh"
 
