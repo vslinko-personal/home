@@ -1,6 +1,8 @@
 'packages': [
-  'Zen'
+  'atom-prettify'
+  'autocomplete-plus'
   'color-picker'
   'command-logger'
+  'remote-sync'
   'sort-lines'
 ]

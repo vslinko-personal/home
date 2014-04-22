@@ -7,15 +7,13 @@
     'atom-dark-ui'
     'base16-tomorrow-dark-theme'
   ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
+  'disabledPackages': [
+    'autosave'
   ]
 'exception-reporting':
   'userId': '1f04ba9f-ecd3-914e-5512-107ecc8ebd55'
 'release-notes':
-  'viewedVersion': '0.78.0'
+  'viewedVersion': '0.90.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -34,3 +32,4 @@
     'text.plain'
     'text.plain.null-grammar'
   ]
+'autocomplete-plus': {}
