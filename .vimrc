@@ -1,37 +1,114 @@
-" plugins
-call pathogen#infect()
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NeoBundle configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" environment
-set colorcolumn=80
-set cursorline
-set list
-set number
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#begin(expand('~/.vim/bundle'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Languages
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'wavded/vim-stylus'
+NeoBundle 'nginx.vim'
+NeoBundle 'mxw/vim-jsx'
+
+" Completion
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'raimondi/delimitmate'
+NeoBundle 'tpope/vim-abolish'
+
+" Code display
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'nanotech/jellybeans.vim'
+
+" Integrations
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'scrooloose/syntastic'
+
+" Interface
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'MattesGroeger/vim-bookmarks'
+
+" Commands
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'terryma/vim-multiple-cursors'
+
+" Other
+NeoBundle 'tpope/vim-sensible'
+
+" end neobundle configuration
+call neobundle#end()
+filetype plugin indent on
+NeoBundleCheck
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Bundles configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" nginx.vim
+autocmd BufRead,BufNewFile *.conf setfiletype nginx
+
+" Shougo/neocomplcache.vim
+let g:neocomplcache_enable_at_startup = 1
+
+" nathanaelkane/vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+
+" nanotech/jellybeans.vim
+syntax enable
+set background=dark
 colorscheme jellybeans
 highlight ColorColumn ctermbg=darkgray
 
-" editor
+" scrooloose/syntastic
+let g:syntastic_javascript_checkers = ['jsxhint']
+
+" scrooloose/nerdtree
+let g:NERDTreeIgnore = ['\.swp$']
+let g:NERDTreeShowHidden = 1
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" myusuf3/numbers.vim
+set number
+
+" Lokaltog/vim-easymotion
+nnoremap s <Plug>(easymotion-s)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set colorcolumn=80
+set cursorline
 set expandtab
+set list
 set shiftwidth=2
 set tabstop=2
 
-" show hidden files in filesystem tree
-let NERDTreeShowHidden=1
-
-" disable matchparen plugin
-let loaded_matchparen=1
-
-" mappings
-nmap <C-b> <Leader>ci
-imap <C-b> <Esc><Leader>cili
+let g:loaded_matchparen = 1
 
 nnoremap <C-t> :NERDTreeToggle<CR>
-
-nnoremap <C-o> :set nonumber!<CR>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
 nnoremap - <C-w>-
 nnoremap = <C-w>+
 
@@ -43,15 +120,9 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vnoremap <S-Tab> <gv
 
-" set filetypes
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 autocmd BufRead,BufNewFile Berksfile set filetype=ruby
 
-" trim trailing spaces before save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" open filesystem tree if vim opened without arguments
-autocmd vimenter * if !argc() | NERDTree | endif
-
-" close vim if opened only filesystem tree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

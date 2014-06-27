@@ -1,54 +1,84 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule ".vim/autoload"]
-	path = .vim/autoload
-	url = https://gist.github.com/9771127.git
+[submodule ".vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim
+[submodule ".vim/bundle/delimitmate"]
+	path = .vim/bundle/delimitmate
+	url = https://github.com/raimondi/delimitmate
+[submodule ".vim/bundle/html5.vim"]
+	path = .vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim
 [submodule ".vim/bundle/jellybeans.vim"]
 	path = .vim/bundle/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim.git
-[submodule ".vim/bundle/matchit.zip"]
-	path = .vim/bundle/matchit.zip
-	url = https://github.com/vim-scripts/matchit.zip.git
+	url = https://github.com/nanotech/jellybeans.vim
+[submodule ".vim/bundle/neocomplcache.vim"]
+	path = .vim/bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/bundle/nginx.vim"]
+	path = .vim/bundle/nginx.vim
+	url = https://github.com/vim-scripts/nginx.vim
+[submodule ".vim/bundle/numbers.vim"]
+	path = .vim/bundle/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/vim-abolish"]
 	path = .vim/bundle/vim-abolish
-	url = https://github.com/tpope/vim-abolish.git
-[submodule ".vim/bundle/vim-autocomplpop"]
-	path = .vim/bundle/vim-autocomplpop
-	url = https://github.com/clones/vim-autocomplpop.git
+	url = https://github.com/tpope/vim-abolish
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule ".vim/bundle/vim-bookmarks"]
+	path = .vim/bundle/vim-bookmarks
+	url = https://github.com/MattesGroeger/vim-bookmarks
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule ".vim/bundle/vim-easymotion"]
+	path = .vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/vim-haml"]
+	path = .vim/bundle/vim-haml
+	url = https://github.com/tpope/vim-haml
+[submodule ".vim/bundle/vim-indent-guides"]
+	path = .vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule ".vim/bundle/vim-jade"]
 	path = .vim/bundle/vim-jade
-	url = https://github.com/digitaltoad/vim-jade.git
-[submodule ".vim/bundle/vim-l9"]
-	path = .vim/bundle/vim-l9
-	url = https://github.com/clones/vim-l9.git
+	url = https://github.com/digitaltoad/vim-jade
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule ".vim/bundle/vim-less"]
+	path = .vim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule ".vim/bundle/vim-pastie"]
-	path = .vim/bundle/vim-pastie
-	url = https://github.com/tpope/vim-pastie.git
+	url = https://github.com/terryma/vim-multiple-cursors
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
-	url = https://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible
 [submodule ".vim/bundle/vim-stylus"]
 	path = .vim/bundle/vim-stylus
-	url = https://github.com/wavded/vim-stylus.git
-[submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
+	url = https://github.com/wavded/vim-stylus
