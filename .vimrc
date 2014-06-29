@@ -20,6 +20,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'nginx.vim'
+NeoBundle 'evidens/vim-twig'
 NeoBundle 'mxw/vim-jsx'
 
 " Completion
