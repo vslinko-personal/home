@@ -16,6 +16,10 @@ export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+if [ -d "$HOME/workspace/_bin" ]; then
+  export PATH="$HOME/workspace/_bin:$PATH"
+fi
+
 npmv() {
   npm view $1 version
 }
