@@ -1,35 +1,59 @@
-'editor':
-  'fontSize': 16
-  'showIndentGuide': true
-  'showInvisibles': true
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'base16-tomorrow-dark-theme'
-  ]
-  'disabledPackages': [
-    'autosave'
-  ]
-'exception-reporting':
-  'userId': '1f04ba9f-ecd3-914e-5512-107ecc8ebd55'
-'release-notes':
-  'viewedVersion': '0.90.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '596fbe75c35960083124646a3195182a369edaec'
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'spell-check':
-  'grammars': [
-    'source.gfm'
-    'text.git-commit'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'autocomplete-plus': {}
+'global':
+  'editor':
+    'showInvisibles': true
+    'autoIndentOnPaste': false
+    'normalizeIndentOnPaste': false
+    'showIndentGuide': true
+    'invisibles': {}
+  'core':
+    'themes': [
+      'atom-dark-ui'
+      'base16-tomorrow-dark-theme'
+    ]
+    'disabledPackages': [
+      'autosave'
+      'archive-view'
+      'background-tips'
+      'bookmarks'
+      'dev-live-reload'
+      'encoding-selector'
+      'package-generator'
+      'release-notes'
+      'snippets'
+      'spell-check'
+      'update-package-dependencies'
+      'autocomplete'
+    ]
+    'projectHome': '/Users/vslinko/workspace/_atom'
+  'exception-reporting':
+    'userId': '1f04ba9f-ecd3-914e-5512-107ecc8ebd55'
+  'release-notes':
+    'viewedVersion': '0.90.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '596fbe75c35960083124646a3195182a369edaec'
+  'markdown-preview':
+    'grammars': [
+      'source.gfm'
+      'source.litcoffee'
+      'text.plain'
+      'text.plain.null-grammar'
+    ]
+  'autocomplete-plus':
+    'includeCompletionsFromAllBuffers': true
+  'linter-less':
+    'ieCompatibilityChecks': false
+    'strictMath': true
+    'strictUnits': true
+  'linter-jscs':
+    'preset': 'crockford'
+    'jscsExecutablePath': '/usr/local/bin'
+  'fuzzy-finder': {}
+  'linter': {}
+  'linter-csslint': {}
+  'linter-jshint': {}
+  'linter-jsxhint': {}
+  'merge-conflicts': {}
+  'minimap': {}
+  'tabs': {}
