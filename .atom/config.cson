@@ -47,7 +47,7 @@
     'strictMath': true
     'strictUnits': true
   'linter-jscs':
-    'preset': 'crockford'
+    'preset': 'google'
     'jscsExecutablePath': '/usr/local/bin'
   'fuzzy-finder': {}
   'linter': {}
