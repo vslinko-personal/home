@@ -6,25 +6,40 @@
     'showIndentGuide': true
     'invisibles': {}
   'core':
-    'themes': [
-      'atom-dark-ui'
-      'base16-tomorrow-dark-theme'
-    ]
     'disabledPackages': [
       'autosave'
       'archive-view'
       'background-tips'
-      'bookmarks'
       'dev-live-reload'
       'encoding-selector'
       'package-generator'
       'release-notes'
-      'snippets'
       'spell-check'
       'update-package-dependencies'
       'autocomplete'
+      'linter-php'
+      'autoflow'
+      'language-clojure'
+      'language-go'
+      'language-hyperlink'
+      'language-java'
+      'language-make'
+      'language-mustache'
+      'language-objective-c'
+      'language-perl'
+      'language-property-list'
+      'language-ruby-on-rails'
+      'language-toml'
+      'link'
+      'open-on-github'
+      'styleguide'
+      'welcome'
     ]
     'projectHome': '/Users/vslinko/workspace/_atom'
+    'themes': [
+      'atom-dark-ui'
+      'base16-tomorrow-dark-theme'
+    ]
   'exception-reporting':
     'userId': '1f04ba9f-ecd3-914e-5512-107ecc8ebd55'
   'release-notes':
@@ -48,12 +63,8 @@
     'strictUnits': true
   'linter-jscs':
     'preset': 'google'
-    'jscsExecutablePath': '/usr/local/bin'
-  'fuzzy-finder': {}
+  'fuzzy-finder':
+    'ignoredNames': [
+      'node_modules'
+    ]
   'linter': {}
-  'linter-csslint': {}
-  'linter-jshint': {}
-  'linter-jsxhint': {}
-  'merge-conflicts': {}
-  'minimap': {}
-  'tabs': {}
