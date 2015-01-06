@@ -83,6 +83,7 @@ for i, group in enumerate(groups):
 layouts = [
     layout.MonadTall(),
     layout.Max(),
+    layout.RatioTile(),
     layout.TreeTab(
         font='Droid Sans Mono'
     ),
