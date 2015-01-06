@@ -85,3 +85,6 @@
 [submodule ".vim/bundle/vim-twig"]
 	path = .vim/bundle/vim-twig
 	url = https://github.com/evidens/vim-twig.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/vslinko/prelude.git
