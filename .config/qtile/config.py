@@ -2,6 +2,16 @@ from libqtile import layout, bar, widget, hook
 from libqtile.command import lazy
 from libqtile.config import Key, Group, Match, Screen
 import subprocess
+import re
+import os
+
+
+def get_screen_resolution(screen_index=0):
+  output = subprocess.Popen('xrandr', stdout=subprocess.PIPE).stdout.read().decode('UTF-8')
+  output = [row for row in output.splitlines() if 'connected' in row][screen_index]
+  output = re.search('\d+x\d+', output).group(0)
+  output = tuple(map(int, output.split('x')))
+  return output
 
 
 def move_to_group_and_show(group):
@@ -151,5 +161,11 @@ def dialogs(window):
 
 
 @hook.subscribe.startup
-def starup():
-    subprocess.Popen(['feh', '--bg-fill', '.wallpaper.jpg'])
+def wallpaper():
+    resolution = 'x'.join(map(str, get_screen_resolution()))
+    wallpaper_path = os.path.expanduser(os.path.join('~', '.wallpapers', resolution + '.png'))
+
+    if not os.path.isfile(wallpaper_path):
+        return
+
+    subprocess.Popen(['feh', '--bg-fill', wallpaper_path])
