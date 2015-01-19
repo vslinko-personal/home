@@ -53,21 +53,21 @@ keys = [
     Key(['mod4'], 'Tab', lazy.layout.next()),
     Key(['mod4'], 'p', lazy.nextlayout()),
 
-    Key(['mod4'], 'k', lazy.layout.down()),
-    Key(['mod4'], 'j', lazy.layout.up()),
     Key(['mod4'], 'h', lazy.screen.prevgroup()),
+    Key(['mod4'], 'j', lazy.layout.down()),
+    Key(['mod4'], 'k', lazy.layout.up()),
     Key(['mod4'], 'l', lazy.screen.nextgroup()),
 
-    Key(['mod4', "shift"], "k", lazy.layout.shuffle_down()),
-    Key(['mod4', "shift"], "j", lazy.layout.shuffle_up()),
+    Key(['mod4', 'shift'], 'j', lazy.layout.shuffle_down()),
+    Key(['mod4', 'shift'], 'k', lazy.layout.shuffle_up()),
 
-    Key(['mod4'], "n", lazy.layout.normalize()),
-    Key(['mod4'], "o", lazy.layout.maximize()),
+    Key(['mod4'], 'n', lazy.layout.normalize()),
+    Key(['mod4'], 'o', lazy.layout.maximize()),
 
-    Key(['mod4'], "i", lazy.layout.grow()),
-    Key(['mod4'], "m", lazy.layout.shrink()),
+    Key(['mod4'], 'i', lazy.layout.grow()),
+    Key(['mod4'], 'm', lazy.layout.shrink()),
 
-    # Window management
+    # Windows management
     Key(['mod4'], 'w', lazy.window.kill()),
     Key(['mod4'], 'r', lazy.spawncmd()),
     Key(['mod4'], 'Return', lazy.spawn('terminator')),
@@ -80,22 +80,29 @@ groups = [
     Group('Web'),
     Group(
         name='Chat',
-        matches=[Match(wm_class=["Skype"])]
+        matches=[Match(wm_class=['Skype'])],
     ),
 ]
 
 for i, group in enumerate(groups):
-    keys.append(Key(['mod4'], str(i + 1), lazy.group[group.name].toscreen()))
-    keys.append(Key(['mod4', 'control'], str(i + 1), lazy.function(move_to_group_and_show(group))))
-    keys.append(Key(['mod4', 'shift'], str(i + 1), lazy.window.togroup(group.name)))
+    no = str(i + 1)
+    keys.append(Key(['mod4'], no, lazy.group[group.name].toscreen()))
+    keys.append(Key(['mod4', 'control'], no, lazy.function(move_to_group_and_show(group))))
+    keys.append(Key(['mod4', 'shift'], no, lazy.window.togroup(group.name)))
 
 
 layouts = [
     layout.MonadTall(),
     layout.Max(),
-    layout.RatioTile(),
+    layout.RatioTile(
+        border_focus='ff0000',
+    ),
     layout.TreeTab(
-        font='Droid Sans Mono'
+        bg_color='cccccc',
+        active_bg='505050',
+        inactive_bg='909090',
+        font='Droid Sans Mono',
+        section_fg='000000',
     ),
 ]
 
@@ -103,11 +110,12 @@ layouts = [
 bottom_bar = bar.Bar(
     widgets=[
         widget.GroupBox(
+            active='000000',
+            inactive='000000',
             borderwidth=1,
             rounded=False,
-            fontsize=None,
-            inactive='999999',
-            this_current_screen_border='ffffff'
+            this_current_screen_border='000000',
+            padding=2,
         ),
         widget.Sep(),
         widget.WindowName(),
@@ -118,21 +126,21 @@ bottom_bar = bar.Bar(
         widget.CurrentLayout(),
         widget.Sep(),
         widget.KeyboardLayout(
-            configured_keyboards=['us', 'ru']
+            configured_keyboards=['us', 'ru'],
         ),
         widget.Sep(),
         widget.Clock(
-            format='%Y-%m-%d %H:%M:%S'
+            format='%Y-%m-%d %H:%M:%S',
         ),
         widget.Sep(),
         widget.Battery(
-            format="{char}{percent:2.0%}",
+            format='{char}{percent:2.0%}',
             charge_char='+',
-            discharge_char='-'
+            discharge_char='-',
         ),
     ],
     size=27,
-    background=['333333', '111111'],
+    background='cccccc',
 )
 
 
@@ -146,7 +154,8 @@ screens = [
 widget_defaults = dict(
     font='Droid Sans',
     fontsize=14,
-    padding=3
+    foreground='000000',
+    padding=3,
 )
 
 follow_mouse_focus = False
