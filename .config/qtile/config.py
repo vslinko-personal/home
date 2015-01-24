@@ -171,8 +171,7 @@ def dialogs(window):
 
 @hook.subscribe.startup
 def wallpaper():
-    resolution = 'x'.join(map(str, get_screen_resolution()))
-    wallpaper_path = os.path.expanduser(os.path.join('~', '.wallpapers', resolution + '.png'))
+    wallpaper_path = os.path.expanduser(os.path.join('~', '.wallpaper.png'))
 
     if not os.path.isfile(wallpaper_path):
         return
