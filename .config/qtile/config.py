@@ -178,3 +178,8 @@ def wallpaper():
         return
 
     subprocess.Popen(['feh', '--bg-fill', wallpaper_path])
+
+@hook.subscribe.startup
+def vboxclient():
+    if os.path.isfile('/usr/bin/VBoxClient-all'):
+        subprocess.Popen(['/usr/bin/VBoxClient-all'])
