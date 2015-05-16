@@ -8,7 +8,7 @@ ZSH="$HOME/.oh-my-zsh"
 ZSH_CUSTOM="$HOME/.oh-my-custom-zsh"
 ZSH_THEME="vslinko"
 DISABLE_AUTO_UPDATE="true"
-plugins=(brew composer docker emacs git history node npm osx rsync sublime sudo symfony2 systemd)
+plugins=(brew composer docker git history node npm osx rsync sublime sudo symfony2 systemd)
 
 source "$ZSH/oh-my-zsh.sh"
 
