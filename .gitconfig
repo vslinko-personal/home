@@ -6,4 +6,4 @@ email = vyacheslav.slinko@gmail.com
 editor = vim
 
 [push]
-default = matching
+default = simple
