@@ -29,6 +29,8 @@ keys = [
     Key(['mod4'], 'r', lazy.spawncmd()),
     Key(['mod4'], 'Return', lazy.spawn('lxterminal')),
     Key(['mod4', 'shift'], 'c', lazy.spawn('google-chrome-stable')),
+
+    Key(['mod4', 'shift'], 'Escape', lazy.spawn('systemctl poweroff')),
 ]
 
 
