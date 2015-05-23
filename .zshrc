@@ -8,7 +8,7 @@ ZSH="$HOME/.oh-my-zsh"
 ZSH_CUSTOM="$HOME/.oh-my-custom-zsh"
 ZSH_THEME="vslinko"
 DISABLE_AUTO_UPDATE="true"
-plugins=(atom brew composer docker emacs git history node npm osx rsync sublime sudo symfony2 systemd)
+plugins=(atom brew composer docker emacs git history node nvm npm osx rsync sublime sudo symfony2 systemd)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -18,3 +18,9 @@ hash -d qwe="$WORKSPACE"
 if [ -d "$WORKSPACE/_bin" ]; then
   export PATH="$WORKSPACE/_bin:$PATH"
 fi
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
