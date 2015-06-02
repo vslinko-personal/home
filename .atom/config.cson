@@ -1,73 +1,60 @@
-'global':
-  'editor':
-    'showInvisibles': true
-    'autoIndentOnPaste': false
-    'normalizeIndentOnPaste': false
-    'showIndentGuide': true
-    'preferredLineLength': 120
-    'fontSize': 13
-    'fontFamily': 'Monaco, Droid Sans Mono'
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'autosave'
-      'archive-view'
-      'background-tips'
-      'encoding-selector'
-      'release-notes'
-      'spell-check'
-      'update-package-dependencies'
-      'autocomplete'
-      'linter-php'
-      'autoflow'
-      'language-clojure'
-      'language-go'
-      'language-hyperlink'
-      'language-java'
-      'language-make'
-      'language-mustache'
-      'language-objective-c'
-      'language-perl'
-      'language-property-list'
-      'language-ruby-on-rails'
-      'language-toml'
-      'link'
-      'open-on-github'
-      'styleguide'
-      'welcome'
+"*":
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    autoIndentOnPaste: false
+    preferredLineLength: 120
+    invisibles: {}
+    fontFamily: "Monaco, Droid Sans Mono"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_"
+  core:
+    disabledPackages: [
+      "archive-view"
+      "autoflow"
+      "background-tips"
+      "deprecation-cop"
+      "dev-live-reload"
+      "feedback"
+      "linter"
+      "linter-php"
+      "metrics"
+      "package-generator"
+      "spell-check"
+      "styleguide"
+      "update-package-dependencies"
+      "welcome"
+      "release-notes"
     ]
-    'projectHome': '/Users/vslinko/workspace/_atom'
-    'themes': [
-      'atom-light-ui'
-      'solarized-light-syntax'
+    themes: [
+      "seti-ui"
+      "seti-syntax"
     ]
-  'exception-reporting':
-    'userId': '1f04ba9f-ecd3-914e-5512-107ecc8ebd55'
-  'release-notes':
-    'viewedVersion': '0.90.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '596fbe75c35960083124646a3195182a369edaec'
-  'markdown-preview':
-    'grammars': [
-      'source.gfm'
-      'source.litcoffee'
-      'text.plain'
-      'text.plain.null-grammar'
+    projectHome: "/Users/vslinko/workspace/_atom"
+  "exception-reporting":
+    userId: "1f04ba9f-ecd3-914e-5512-107ecc8ebd55"
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
     ]
-  'autocomplete-plus':
-    'includeCompletionsFromAllBuffers': true
-  'linter-less':
-    'ieCompatibilityChecks': false
-    'strictMath': true
-    'strictUnits': true
-  'linter-jscs':
-    'preset': 'airbnb'
-  'fuzzy-finder':
-    'ignoredNames': [
-      'node_modules'
+  "autocomplete-plus":
+    includeCompletionsFromAllBuffers: true
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
     ]
-  'linter':
-    'statusBar': 'None'
-    'showErrorInline': true
+  "merge-conflicts": {}
+  caniuse: {}
+  minimap: {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  autosave:
+    enabled: true
+  "tree-view":
+    hideIgnoredNames: true
+  tabs: {}
+  "git-diff": {}
+  "grammar-selector": {}
