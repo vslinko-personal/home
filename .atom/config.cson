@@ -1,60 +1,35 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    autoIndentOnPaste: false
-    preferredLineLength: 120
-    invisibles: {}
-    fontFamily: "Monaco, Droid Sans Mono"
-    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_"
   core:
-    disabledPackages: [
-      "archive-view"
-      "autoflow"
-      "background-tips"
-      "deprecation-cop"
-      "dev-live-reload"
-      "feedback"
-      "linter"
-      "linter-php"
-      "metrics"
-      "package-generator"
-      "spell-check"
-      "styleguide"
-      "update-package-dependencies"
-      "welcome"
-      "release-notes"
-    ]
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "one-dark-ui"
+      "tomorrow-night-eighties-syntax"
     ]
-    projectHome: "/Users/vslinko/workspace/_atom"
+    disabledPackages: [
+      "autocomplete-paths"
+    ]
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    fontFamily: "Source Code Pro"
+    lineHeight: 1.4
+    fontSize: 19
   "exception-reporting":
-    userId: "1f04ba9f-ecd3-914e-5512-107ecc8ebd55"
-  "markdown-preview":
-    grammars: [
-      "source.gfm"
-      "source.litcoffee"
-      "text.plain"
-      "text.plain.null-grammar"
-    ]
-  "autocomplete-plus":
-    includeCompletionsFromAllBuffers: true
-  "fuzzy-finder":
-    ignoredNames: [
-      "node_modules"
-    ]
-  "merge-conflicts": {}
-  caniuse: {}
-  minimap: {}
-  "vim-mode":
-    useClipboardAsDefaultRegister: true
-    useSmartcaseForSearch: true
+    userId: "ae94aee2-2123-ff27-55df-260485586645"
+  welcome:
+    showOnStartup: false
   autosave:
     enabled: true
-  "tree-view":
-    hideIgnoredNames: true
-  tabs: {}
-  "git-diff": {}
-  "grammar-selector": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      "find-and-replace": true
+  "file-icons":
+    onChanges: true
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "advanced-new-file":
+    suggestCurrentFilePath: true
+    showFilesInAutoComplete: true
+  caniuse:
+    showAndChr: false
+    showAndroid: false
