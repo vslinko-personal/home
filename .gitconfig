@@ -1,6 +1,7 @@
 [user]
 name = Vyacheslav Slinko
 email = vyacheslav.slinko@gmail.com
+signingkey = 45CD3748
 
 [core]
 editor = vim
